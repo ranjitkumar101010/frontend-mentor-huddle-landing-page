@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #674bb1;
+    font-family: "Poppins", serif;
+    color: white;
+  }
+
+  .flxbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    background-image: url("images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .container {
+    width: 1270px;
+  }
+
+  nav {
+    padding: 30px 0px;
+    margin-bottom: 20px;
+  }
+
+  nav img {
+    width: 150px;
+  }
+
+  .content {
+    display: flex;
+  }
+
+  .hero-section {
+    padding: 40px;
+  }
+
+  .hero-section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .hero-section p {
+    font-family: "Open Sans", serif;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .hero-section button {
+    padding: 12px 45px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    color: #674bb1;
+    box-shadow: 0px 5px 20px #483289e5;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+  }
+
+  .hero-section button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .social-links i {
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+  }
+
+  .social-links i:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+  }
+
+  .facebook-icon {
+    padding: 10px 13px;
+  }
+
+  .twitter-icon,
+  .instagram-icon {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 10px;
+    background-color: white;
+    color: black;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      padding: 10px 30px;
+      background-image: url("images/bg-mobile.svg");
+      background-size: contain;
+      background-position: top;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    nav img {
+      width: 130px;
+    }
+
+    .content {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .feature-img img {
+      width: 100%;
+    }
+
+    .hero-section {
+      padding: 50px 0px;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .hero-section p {
+      font-size: 14px;
+      padding: 0px 24px;
+    }
+
+    .hero-section button {
+      padding: 12px 100px;
+    }
+
+    .social-links {
+      justify-content: center;
+    }
+
+    .social-links i {
+      font-size: 12px;
+    }
+  }
